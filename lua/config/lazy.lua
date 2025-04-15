@@ -1,4 +1,5 @@
 require("plugins.treesitter")
+require("plugins.telescope")
 
 -- Bootstrap lazy.nvim
 local lazypath = vim.fn.stdpath("data") .. "/lazy/lazy.nvim"
@@ -25,5 +26,7 @@ vim.g.maplocalleader = "\\"
 
 -- Setup lazy.nvim
 require("lazy").setup({
-    {'nvim-treesitter/nvim-treesitter', build = ':TSUpdate'},
+    spec = {
+        { import = "plugins" }
+    }
 })
