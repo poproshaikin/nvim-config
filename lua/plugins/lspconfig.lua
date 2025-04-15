@@ -40,11 +40,10 @@ return {
       lspconfig.gopls.setup({
         capabilities = capabilities
       })
-      -- TODO: finish implementing omnisharp lsp to work with c#
-      -- vim.keymap.set("n", "K", vim.lsp.buf.hover, {})
-      -- vim.keymap.set('n', 'gD', vim.lsp.buf.declaration, opts)
-      -- vim.keymap.set({ 'n', 'v' }, '<space>ca', vim.lsp.buf.code_action, opts)
-      -- vim.keymap.set('n', '<leader>rn', vim.lsp.buf.rename, opts)
+      vim.keymap.set("n", "K", vim.lsp.buf.hover, {})
+      vim.keymap.set('n', 'gD', vim.lsp.buf.declaration, opts)
+      vim.keymap.set({ 'n', 'v' }, '<space>ca', vim.lsp.buf.code_action, opts)
+      vim.keymap.set('n', '<leader>rn', vim.lsp.buf.rename, opts)
     end
   }
 }
