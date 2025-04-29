@@ -11,6 +11,7 @@ vim.opt.number = true
 vim.opt.cursorline = true
 vim.opt.mouse = "a"
 vim.opt.rnu = true
+vim.opt.swapfile = false
 vim.opt.clipboard = "unnamedplus"
 vim.opt.ttyfast = true
 vim.cmd("filetype plugin indent on")
